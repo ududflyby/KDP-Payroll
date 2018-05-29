@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 24, 2018 at 02:47 PM
+-- Generation Time: May 29, 2018 at 04:50 AM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -30,6 +30,7 @@ CREATE TABLE `databarang` (
   `kd_barang` varchar(10) NOT NULL,
   `namabarang` varchar(60) NOT NULL,
   `jenisbarang` varchar(60) NOT NULL,
+  `jumlah` varchar(60) NOT NULL,
   `catatan` varchar(120) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -37,9 +38,9 @@ CREATE TABLE `databarang` (
 -- Dumping data for table `databarang`
 --
 
-INSERT INTO `databarang` (`kd_barang`, `namabarang`, `jenisbarang`, `catatan`) VALUES
-('4512', 'Udud', 'SDMs', 'Ga tau'),
-('9868', 'Motor', 'Kendaraan', 'Ga tau');
+INSERT INTO `databarang` (`kd_barang`, `namabarang`, `jenisbarang`, `jumlah`, `catatan`) VALUES
+('4512', 'Udud', 'SDMs', '5', 'Nihil'),
+('9868', 'Motor', 'Kendaraan', '5', 'Nihil');
 
 -- --------------------------------------------------------
 
