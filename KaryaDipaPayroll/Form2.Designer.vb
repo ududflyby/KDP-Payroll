@@ -24,6 +24,8 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.s = New System.Windows.Forms.TabPage()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.txtJumlah = New System.Windows.Forms.TextBox()
         Me.dgvDataBarang = New System.Windows.Forms.DataGridView()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.btnEdit = New System.Windows.Forms.Button()
@@ -55,6 +57,8 @@ Partial Class Form2
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.txtCariNama = New System.Windows.Forms.TextBox()
         Me.txtKdgaji = New System.Windows.Forms.TextBox()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.txtTotal = New System.Windows.Forms.TextBox()
@@ -78,10 +82,6 @@ Partial Class Form2
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
-        Me.txtJumlah = New System.Windows.Forms.TextBox()
-        Me.Label22 = New System.Windows.Forms.Label()
-        Me.txtCariNama = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.s.SuspendLayout()
         CType(Me.dgvDataBarang, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -129,6 +129,22 @@ Partial Class Form2
         Me.s.TabIndex = 0
         Me.s.Text = "Data Barang"
         Me.s.UseVisualStyleBackColor = True
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.Location = New System.Drawing.Point(359, 13)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(53, 17)
+        Me.Label22.TabIndex = 13
+        Me.Label22.Text = "Jumlah"
+        '
+        'txtJumlah
+        '
+        Me.txtJumlah.Location = New System.Drawing.Point(446, 10)
+        Me.txtJumlah.Name = "txtJumlah"
+        Me.txtJumlah.Size = New System.Drawing.Size(214, 22)
+        Me.txtJumlah.TabIndex = 12
         '
         'dgvDataBarang
         '
@@ -426,6 +442,22 @@ Partial Class Form2
         Me.TabPage3.Text = "Gaji"
         Me.TabPage3.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(543, 263)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 22)
+        Me.Button1.TabIndex = 15
+        Me.Button1.Text = "Cari"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'txtCariNama
+        '
+        Me.txtCariNama.Location = New System.Drawing.Point(337, 263)
+        Me.txtCariNama.Name = "txtCariNama"
+        Me.txtCariNama.Size = New System.Drawing.Size(202, 22)
+        Me.txtCariNama.TabIndex = 14
+        '
         'txtKdgaji
         '
         Me.txtKdgaji.Location = New System.Drawing.Point(210, 9)
@@ -561,7 +593,7 @@ Partial Class Form2
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Tai Le", 20.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(79, 147)
+        Me.Label1.Location = New System.Drawing.Point(65, 150)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(847, 44)
         Me.Label1.TabIndex = 0
@@ -633,38 +665,6 @@ Partial Class Form2
         '
         'PrintDocument1
         '
-        '
-        'txtJumlah
-        '
-        Me.txtJumlah.Location = New System.Drawing.Point(446, 10)
-        Me.txtJumlah.Name = "txtJumlah"
-        Me.txtJumlah.Size = New System.Drawing.Size(214, 22)
-        Me.txtJumlah.TabIndex = 12
-        '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(359, 13)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(53, 17)
-        Me.Label22.TabIndex = 13
-        Me.Label22.Text = "Jumlah"
-        '
-        'txtCariNama
-        '
-        Me.txtCariNama.Location = New System.Drawing.Point(337, 263)
-        Me.txtCariNama.Name = "txtCariNama"
-        Me.txtCariNama.Size = New System.Drawing.Size(202, 22)
-        Me.txtCariNama.TabIndex = 14
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(543, 263)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 22)
-        Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Cari"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form2
         '
